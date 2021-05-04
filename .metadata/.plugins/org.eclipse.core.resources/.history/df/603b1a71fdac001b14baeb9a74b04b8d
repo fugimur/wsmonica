@@ -1,0 +1,25 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class Lista2Exercicio1 {
+
+	public static void main(String[] args) {
+	
+		String nome = JOptionPane.showInputDialog("Nome cliente").toUpperCase();
+		short diarias = Short.parseShort(JOptionPane.showInputDialog("Digite qtde de diárias"));
+		
+		if(diarias > 15) {   
+			float total = (80 + (float) 5.5) * diarias;
+		}
+		else if(diarias == 6) {
+			float total = (80 + 6) * diarias;
+		}
+		else {
+			float total = (80 + 8) * diarias;
+		}
+		
+		System.out.println(nome + " - Valor a pargar: R$ " + diarias);
+	}
+
+}

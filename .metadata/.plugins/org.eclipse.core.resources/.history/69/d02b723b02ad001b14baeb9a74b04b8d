@@ -1,0 +1,32 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class Lista2Exercicio3 {
+
+	public static void main(String[] args) {
+
+		int num1 = Integer.parseInt(JOptionPane.showInputDialog("Digite um número inteiro"));
+		int num2 = Integer.parseInt(JOptionPane.showInputDialog("Digite outro número inteiro"));
+		String operacao = JOptionPane.showInputDialog("Digite a operação aritmética");
+
+		if(operacao=="adicao") {   
+			int resultado = num1 + num2;
+			System.out.println("Resultado = " + resultado);
+		}
+		else if(operacao=="subtracao") {   
+			int resultado = num1 - num2;
+			System.out.println("Resultado = " + resultado);
+		}
+		else if(operacao=="multiplicacao") {
+			int resultado = num1 * num2;
+			System.out.println("Resultado = " + resultado);
+		}
+		else {  //divisao
+			int resultado = num1 / num2;
+			System.out.println("Resultado = " + resultado);
+		}
+
+	}
+
+}

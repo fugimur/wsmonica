@@ -1,0 +1,28 @@
+package variaveis;
+
+public class ManipulaString {
+
+	public static void main(String[] args) {
+		
+		String email = "mOnicA@itau.com.br";
+		System.out.println("Original: " + email);
+		System.out.println("Minusculo: " + email.toLowerCase());   // apresenta em minuscula, mas nao altera a variavel
+		System.out.println("Maiusculo: " + email.toUpperCase());   // apresenta em maiuscula
+		System.out.println("Qtde de Caracteres " + email.length());
+		System.out.println("Tem arroba? " + email.contains("@"));  // pode ser colocada uma parte da string, nao necessariamente apenas 1 caracter
+		System.out.println("Posição do @: " + email.indexOf("@"));
+		
+		
+		
+		/*
+		 * churros => variavel
+		 * churros() => função
+		 * Abc.churros() => método
+		 * Churros => classe
+		 */
+		
+		
+		
+	}
+	
+}

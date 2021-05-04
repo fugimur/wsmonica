@@ -1,0 +1,27 @@
+package variaveis;
+/* 
+ * para documentar um bloco de mensagens
+ * outras informacoes
+ */
+
+public class TiposDados {
+	// main é o método start point de uma app Java
+	public static void main(String[] args) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	} // fechando o método
+
+} // fechando a classe
