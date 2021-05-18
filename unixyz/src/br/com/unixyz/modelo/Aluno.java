@@ -6,7 +6,7 @@ package br.com.unixyz.modelo;
  * Sugestões:
  * 1o TODOS os atributos devem estar como privados
  * 2o Cada atributo deve possuir um método para o input (set) e outro método para o output (get)
- * 3o ?????
+ * 3o No MINIMO 2 contrutores, sendo um vazio e outro com todos os atributos sendo preenchidos (cheio) - public Aluno()
  * 
  */
 
@@ -17,10 +17,55 @@ public class Aluno {
 	private String email;
 	private String fone;
 	private String cpf;
+	private Endereco endereco;
+
+	public Endereco getEndereco() {
+		return endereco;
+	}
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
+
+	@Override
+	public String toString() {
+		return "Aluno [rm=" + rm + ", nome=" + nome + ", email=" + email + ", fone=" + fone + ", cpf=" + cpf
+				+ ", endereco=" + endereco + "]";
+	}
+
+	// construtor cheio
+	public Aluno(int rm, String nome, String email, String fone, String cpf, Endereco endereco) {
+		super();
+		this.rm = rm;
+		this.nome = nome;
+		this.email = email;
+		this.fone = fone;
+		this.cpf = cpf;
+		this.endereco = endereco;
+	}
+
+
+	// construtor vazio
+	public Aluno() {}
+
+
+	/* 
+	 * construtor com 1 parametro
+	public Aluno(int rm) {
+		this.rm = rm;
+	}
+
+	 * construtor com 2 parametros
+	public Aluno(int rm, String nome) {
+		this.rm=rm;
+		this.nome=nome;
+	}
+	 */
 
 	public int getRm() {
 		return rm;
 	}
+
+
 	public void setRm(int rm) {
 		this.rm = rm;
 	}
@@ -48,15 +93,6 @@ public class Aluno {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-
-	public String toString() {
-		return  "Nome..: " + nome + "\n" +
-				"Email.: " + email + "\n" +
-				"RM....: " + rm + "\n" +
-				"Fone..: " + fone + "\n" +
-				"CPF...: " + cpf;
-	}
-
 
 	public void setBasico(String nome, int rm) {
 		this.nome = nome;
